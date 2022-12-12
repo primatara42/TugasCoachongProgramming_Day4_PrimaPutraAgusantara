@@ -6,7 +6,7 @@ public class Main
 
     public static void main(String[] args)
     {
-        persegi();
+        persegiPanjang();
     }
 
     public static void persegi()
@@ -25,5 +25,20 @@ public class Main
         return luasPersegi;
     }
 
+    public static void persegiPanjang()
+    {
+        System.out.println("== Hitung Luas Persegi Panjang ==");
+        double panjang, lebar, luas;
+        System.out.print("Masukkan Panjang : ");
+        panjang = input.nextDouble();
+        System.out.print("Masukkan Lebar : ");
+        lebar = input.nextDouble();
+        luas = luasPersegiPanjang(panjang, lebar);
+        System.out.println("Luas Persegi Panjang : " + luas);
+    }
 
+    public static double luasPersegiPanjang(double panjang, double lebar)
+    {
+        return panjang * lebar;
+    }
 }
