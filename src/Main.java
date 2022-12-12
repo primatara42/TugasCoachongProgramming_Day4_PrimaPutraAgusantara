@@ -6,7 +6,7 @@ public class Main
 
     public static void main(String[] args)
     {
-        segitiga();
+        lingkaran();
     }
 
     public static void persegi()
@@ -43,7 +43,7 @@ public class Main
 
     public static void segitiga()
     {
-        System.out.println("== Hitung Luas Segitiga==");
+        System.out.println("== Hitung Luas Segitiga ==");
         double alas, tinggi, luas;
 
         System.out.print("Masukkan Alas : ");
@@ -59,5 +59,22 @@ public class Main
     public static double luasSegitiga(double alas, double tinggi)
     {
         return (alas * tinggi) / 2;
+    }
+
+    public static void lingkaran()
+    {
+        System.out.println("== Hitung Luas Lingkaran ==");
+        double jari2, luas;
+
+        System.out.print("Masukkan Jari-Jari : ");
+        jari2 = input.nextDouble();
+        luas = luasLingkaran(jari2);
+
+        System.out.println("Luas Lingkaran : " + luas);
+    }
+
+    public static double luasLingkaran(double jari2)
+    {
+        return 3.14 * jari2 * jari2;
     }
 }
