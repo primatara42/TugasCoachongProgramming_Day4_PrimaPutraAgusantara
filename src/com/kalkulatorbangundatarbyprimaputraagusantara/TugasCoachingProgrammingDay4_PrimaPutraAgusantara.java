@@ -3,7 +3,7 @@ package com.kalkulatorbangundatarbyprimaputraagusantara;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-class Main1
+class Main
 {
     static Scanner input = new Scanner(System.in);
     static DecimalFormat df = new DecimalFormat("0.00");
@@ -16,10 +16,10 @@ class Main1
         do
         {
             System.out.println("== Hitung Luas Bangun Datar ==");
-            System.out.println("1. com.kalkulatorbangundatarbyprimaputraagusantara.Persegi");
-            System.out.println("2. com.kalkulatorbangundatarbyprimaputraagusantara.Persegi Panjang");
-            System.out.println("3. com.kalkulatorbangundatarbyprimaputraagusantara.Segitiga");
-            System.out.println("4. com.kalkulatorbangundatarbyprimaputraagusantara.Lingkaran");
+            System.out.println("1. Persegi");
+            System.out.println("2. Persegi Panjang");
+            System.out.println("3. Segitiga");
+            System.out.println("4. Lingkaran");
 
             System.out.print("Masukkan Input : ");
             pilihan = input.nextInt();
@@ -70,12 +70,12 @@ class Persegi
     {
         double panjangSisi, luas;
 
-        System.out.println("== Hitung Luas com.kalkulatorbangundatarbyprimaputraagusantara.Persegi ==");
+        System.out.println("== Hitung Luas Persegi ==");
         System.out.print("Masukkan Panjang Sisi : ");
-        panjangSisi = Main1.input.nextDouble();
+        panjangSisi = Main.input.nextDouble();
         luas = getLuasPersegi(panjangSisi);
-        luas = Double.parseDouble(Main1.df.format(luas));
-        System.out.println("Luas com.kalkulatorbangundatarbyprimaputraagusantara.Persegi : " + luas);
+        luas = Double.parseDouble(Main.df.format(luas));
+        System.out.println("Luas Persegi : " + luas);
     }
 
     public static double getLuasPersegi(double panjangSisi)
@@ -90,15 +90,15 @@ class PersegiPanjang
     {
         double panjang, lebar, luas;
 
-        System.out.println("== Hitung Luas com.kalkulatorbangundatarbyprimaputraagusantara.Persegi Panjang ==");
+        System.out.println("== Hitung Luas Persegi Panjang ==");
         System.out.print("Masukkan Panjang : ");
-        panjang = Main1.input.nextDouble();
+        panjang = Main.input.nextDouble();
         System.out.print("Masukkan Lebar : ");
-        lebar = Main1.input.nextDouble();
+        lebar = Main.input.nextDouble();
 
         luas = getLuasPersegiPanjang(panjang, lebar);
-        luas = Double.parseDouble(Main1.df.format(luas));
-        System.out.println("Luas com.kalkulatorbangundatarbyprimaputraagusantara.Persegi Panjang : " + luas);
+        luas = Double.parseDouble(Main.df.format(luas));
+        System.out.println("Luas Persegi Panjang : " + luas);
     }
 
     public static double getLuasPersegiPanjang(double panjang, double lebar)
@@ -111,18 +111,18 @@ class Segitiga
 {
     public void segitiga()
     {
-        System.out.println("== Hitung Luas com.kalkulatorbangundatarbyprimaputraagusantara.Segitiga ==");
+        System.out.println("== Hitung Luas Segitiga ==");
         double alas, tinggi, luas;
 
         System.out.print("Masukkan Alas : ");
-        alas = Main1.input.nextDouble();
+        alas = Main.input.nextDouble();
 
         System.out.print("Masukkan Tinggi : ");
-        tinggi = Main1.input.nextDouble();
+        tinggi = Main.input.nextDouble();
 
         luas = getLuasSegitiga(alas, tinggi);
-        luas = Double.parseDouble(Main1.df.format(luas));
-        System.out.println("Luas com.kalkulatorbangundatarbyprimaputraagusantara.Segitiga : " + luas);
+        luas = Double.parseDouble(Main.df.format(luas));
+        System.out.println("Luas Segitiga : " + luas);
     }
 
     public static double getLuasSegitiga(double alas, double tinggi)
@@ -135,14 +135,14 @@ class Lingkaran
 {
     public void lingkaran()
     {
-        System.out.println("== Hitung Luas com.kalkulatorbangundatarbyprimaputraagusantara.Lingkaran ==");
+        System.out.println("== Hitung Luas Lingkaran ==");
         double jari2, luas;
 
         System.out.print("Masukkan Jari-Jari : ");
-        jari2 = Main1.input.nextDouble();
+        jari2 = Main.input.nextDouble();
         luas = getLuasLingkaran(jari2);
-        luas = Double.parseDouble(Main1.df.format(luas));
-        System.out.println("Luas com.kalkulatorbangundatarbyprimaputraagusantara.Lingkaran : " + luas);
+        luas = Double.parseDouble(Main.df.format(luas));
+        System.out.println("Luas Lingkaran : " + luas);
     }
 
     public static double getLuasLingkaran(double jari2)
